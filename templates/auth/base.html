@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>{% block pagetitle %}{% endblock %}</title>
+		<style type="text/css">
+			div#main{
+				width:90%;
+				margin: auto;
+			}
+		</style>
+		{% block header %}{%endblock%}
+	</head>
+	<body>
+		<div id="main">
+			<div id="menu">
+				{% block menu %}{% endblock %}
+			</div>
+			<div id="contents">
+				{% block contents %}{% endblock %}
+			</div>
+		</div>
+	</body>
+</html>
